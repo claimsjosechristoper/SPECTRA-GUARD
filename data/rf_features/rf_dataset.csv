@@ -1,0 +1,2 @@
+timestamp,device_id,operating_state,peak_power,average_power,spectral_centroid,spectral_entropy,bandwidth,peak_count,ground_truth
+2026-08-23T13:18:53Z,esp32_lab_device_01,NORMAL_IDLE,1.2400778153085814e+16,107662523933.7903,2637164.303339091,0.936238274056928,2771434.0,9,NORMAL

@@ -1,0 +1,31 @@
+{
+  "trained_at": "2026-08-23T17:50:02Z",
+  "training_rows": 21,
+  "feature_names": [
+    "noise_floor_db",
+    "peak_power_db",
+    "peak_delta_db",
+    "anomaly_count",
+    "mean_power_db",
+    "std_power_db",
+    "max_power_db",
+    "min_power_db",
+    "occupied_bandwidth_hz"
+  ],
+  "model_parameters": {
+    "n_estimators": 100,
+    "contamination": 0.05,
+    "random_state": 42
+  },
+  "feature_medians": {
+    "noise_floor_db": 41.21127481372153,
+    "peak_power_db": 51.40728714370689,
+    "peak_delta_db": 10.577387940685549,
+    "anomaly_count": 0.0,
+    "mean_power_db": 40.2054601884162,
+    "std_power_db": 5.615547141714899,
+    "max_power_db": 51.40728714370689,
+    "min_power_db": 10.134911126994393,
+    "occupied_bandwidth_hz": 9999923.706054688
+  }
+}

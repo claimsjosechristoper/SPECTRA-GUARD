@@ -1,0 +1,4 @@
+event_id,timestamp,device_id,source_file,network_risk_score,network_risk_level,anomaly_score,reasons,status
+5dd65a54-30b7-42f3-bb53-192e90b12e7e,2026-08-24T13:53:42Z,esp32_lab_device_01,C:\SPECTRA_GUARD\data\network\sample_lab_traffic.csv,0,NORMAL,0,Network behaviour is consistent with the monitored lab baseline.,PASSIVE_MONITOR
+e3c748b6-0904-4826-bdc1-fad0eb86ec14,2026-08-24T13:53:42Z,esp32_lab_device_01,C:\SPECTRA_GUARD\data\network\sample_lab_traffic.csv,0,NORMAL,0,Network behaviour is consistent with the monitored lab baseline.,PASSIVE_MONITOR
+499a17c4-609f-4263-ab43-bad43c9a3377,2026-08-24T13:53:43Z,esp32_lab_device_01,C:\SPECTRA_GUARD\data\network\sample_lab_traffic.csv,0,NORMAL,0,Network behaviour is consistent with the monitored lab baseline.,PASSIVE_MONITOR

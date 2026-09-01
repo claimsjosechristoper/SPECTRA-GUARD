@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPECTRA-GUARD SOC Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">S</div>
+          <div>
+            <h1>SPECTRA-GUARD</h1>
+            <p>Security Operations</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a class="active" href="#overview">Overview</a>
+          <a href="#rf">RF Monitoring</a>
+          <a href="#firmware">Firmware</a>
+          <a href="#alerts">Alerts</a>
+          <a href="#reports">Reports</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Lab environment</p>
+            <h2>System Overview</h2>
+          </div>
+          <div class="status-pill ok">System Healthy</div>
+        </header>
+
+        <section class="card-grid" id="overview">
+          <article class="status-card green">
+            <span class="label">Overall Risk</span>
+            <strong class="value">LOW</strong>
+            <small>0.0 / 100</small>
+          </article>
+
+          <article class="status-card amber">
+            <span class="label">RF Risk</span>
+            <strong class="value">MEDIUM</strong>
+            <small>36 / 100</small>
+          </article>
+
+          <article class="status-card red">
+            <span class="label">Firmware Integrity</span>
+            <strong class="value">MISMATCH</strong>
+            <small>Action Required</small>
+          </article>
+
+          <article class="status-card green">
+            <span class="label">Network Risk</span>
+            <strong class="value">LOW</strong>
+            <small>10 / 100</small>
+          </article>
+        </section>
+
+        <section class="panel-grid">
+          <article class="panel" id="rf">
+            <div class="panel-header">
+              <h3>HackRF Status</h3>
+              <span class="tag ok">Connected</span>
+            </div>
+            <ul class="info-list">
+              <li><span>Device:</span><strong>HackRF One</strong></li>
+              <li><span>Mode:</span><strong>Receive only</strong></li>
+              <li><span>Center Freq:</span><strong>433 MHz</strong></li>
+              <li><span>Sample Rate:</span><strong>10 MS/s</strong></li>
+            </ul>
+          </article>
+
+          <article class="panel" id="firmware">
+            <div class="panel-header">
+              <h3>RF Anomaly</h3>
+              <span class="tag amber">Monitor</span>
+            </div>
+            <p class="metric-text">Signal deviation detected, but not direct proof of malware.</p>
+            <div class="mini-bars">
+              <span style="width: 35%"></span>
+            </div>
+          </article>
+        </section>
+
+        <section class="panel-grid tall">
+          <article class="panel" id="firmware-integrity">
+            <div class="panel-header">
+              <h3>Firmware Integrity</h3>
+              <span class="tag red">Mismatch</span>
+            </div>
+            <ul class="info-list">
+              <li><span>Device ID:</span><strong>esp32_lab_device_01</strong></li>
+              <li><span>Status:</span><strong>VERIFIED</strong></li>
+              <li><span>Last checked:</span><strong>—</strong></li>
+              <li><span>Current Hash:</span><strong>—</strong></li>
+              <li><span>Baseline Hash:</span><strong>—</strong></li>
+            </ul>
+          </article>
+
+          <article class="panel" id="alerts">
+            <div class="panel-header">
+              <h3>Security Alerts</h3>
+              <span class="tag amber">New</span>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Category</th>
+                  <th>Severity</th>
+                  <th>Risk</th>
+                  <th>Description</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="7">No security alerts</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+
+        <section class="panel" id="reports">
+          <div class="panel-header">
+            <h3>RF Spectrum</h3>
+            <span class="tag ok">Live</span>
+          </div>
+          <div class="chart-box">
+            <div class="chart-placeholder">RF spectrum chart container</div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+alert_id,timestamp,source_file,category,risk_score,severity,threshold_severity,ml_classification,ml_anomaly_score,title,description,status
+ffdfa747-d378-468c-8d47-7d7ee9260b36,2026-08-23T18:09:47Z,hackrf_capture_20260823T174137Z.iq,RF_ANOMALY,50,MEDIUM,NONE,NORMAL,0.157341976390853,Abnormal RF Activity Detected,RF activity deviated from the learned baseline and exceeded the configured detection threshold.,CLOSED
+0d76df45-f5a1-4863-b348-a70a92d99d03,2026-08-28T11:16:32Z,hackrf_realtime_20260828T111630Z.iq,RF_ANOMALY,45,MEDIUM,NONE,ANOMALOUS,-0.018837286302533895,Abnormal RF Activity Detected,RF activity deviated from the learned baseline and exceeded the configured detection threshold.,OPEN
+28537c8b-5ddf-4ee2-ba84-2c749dd0d383,2026-08-28T11:16:56Z,hackrf_realtime_20260828T111654Z.iq,RF_ANOMALY,65,MEDIUM,LOW,ANOMALOUS,-0.0844970830985855,Abnormal RF Activity Detected,RF activity deviated from the learned baseline and exceeded the configured detection threshold.,OPEN
